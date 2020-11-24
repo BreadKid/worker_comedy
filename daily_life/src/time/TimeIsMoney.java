@@ -5,7 +5,6 @@ import java.util.Random;
 /**
  * @description: 时间就是金钱
  * @author: Joyce Liu
- * @create: 2020-11-20 18:20
  */
 public class TimeIsMoney {
 
