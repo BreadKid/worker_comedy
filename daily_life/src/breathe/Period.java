@@ -1,5 +1,7 @@
 package breathe;
 
+import java.util.List;
+
 /**
  * 时间段
  */
@@ -15,4 +17,6 @@ public enum Period {
         this.state = state;
         this.description = description;
     }
+
+
 }

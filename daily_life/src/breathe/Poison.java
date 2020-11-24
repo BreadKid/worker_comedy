@@ -1,8 +1,10 @@
 package breathe;
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * 毒气
@@ -25,12 +27,9 @@ public enum Poison {
     }
 
     public static Poison choose(Integer state) {
-        for (Poison p : Poison.values()) {
-            if (p.getState() == state) {
-                return p;
-            }
-        }
-        return null;
+        Poison result = Arrays.stream(Poison.values()).filter(p -> p.getState() == state)
+                .findFirst().orElse(null);
+        return result;
     }
 
 }
