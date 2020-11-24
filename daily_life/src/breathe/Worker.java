@@ -14,6 +14,7 @@ public class Worker {
      */
     public Poison environment(Period period) {
         System.out.print(period.description);
+        // 毒气与环境相匹配
         Poison breathPoison = Poison.choose(period.state);
         return breathPoison;
     }
